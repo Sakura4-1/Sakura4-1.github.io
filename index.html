@@ -59,7 +59,10 @@
 		<div class="weui-cell  weui-cell_example">
 			<div class="weui-cell__hd"><img src="http://tjxx.lnu.edu.cn/images/time.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
 			<div class="weui-cell__bd">
-				<p>时间：2021/11/18</p>
+				<p id="daytime"> 时间：0000/00/00</p>
+				<script>
+					daytime.innerHTML="时间："+new Date().format('yyyy/MM/dd');
+				</script>
 			</div>
 		</div>
 		
