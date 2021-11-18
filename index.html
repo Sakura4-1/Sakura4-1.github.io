@@ -15,7 +15,7 @@
 <body ontouchstart>
 
 <div id="bodyDiv">
-	<p style="text-align:center;background:blue;"><br><img src="http://tjxx.lnu.edu.cn/images/pass.png" width="330px" height="225px" alt=""><br><font id="show_time0" style="font-size:100px">11:21:07</font></p>
+	<p id="bg" style="text-align:center;background:blue;"><br><img src="http://tjxx.lnu.edu.cn/images/pass.png" width="330px" height="225px" alt=""><br><font id="show_time0" style="font-size:100px">00:00:00</font></p>
 	
 	<script>
 		Date.prototype.format = function (fmt) {
@@ -67,7 +67,15 @@
 	<br/>
 	<br/>
 	<div class="weui-footer">
-	<p>版权所有 &copy; 辽宁大学</p>
+	<script>
+		function changeColor(){
+			var  color =  document.getElementById("myColor").value
+			bg.style.background=color
+		}
+	</script>
+	<!style="background:white;border:white;">
+	<input id="myColor" style="background:white;border:white;" type="color" onclick="changeColor()">版权所有 &copy; 辽宁大学</input>
+
 	</div>
 </div>
 <script type="text/javascript" src="http://tjxx.lnu.edu.cn/js/getpass.js?v=2021111811217"></script>
