@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+	
+    <title>返校通行证(2分钟内有效)</title>
+    <link rel="stylesheet" href="weui.min.css">
+    <!script type="text/javascript" src="http://tjxx.lnu.edu.cn/js/weui.min.js?v=2021111811217" charset="UTF-8"><!/script>
+</head>
+<body ontouchstart>
+
+<div id="bodyDiv">
+	<p id="bg" style="text-align:center;background:white;"><br><img src="http://tjxx.lnu.edu.cn/images/pass1.png" width="330px" height="225px" alt=""><br><font id="show_time0" style="font-size:100px">00:00:00</font></p>
+	
+	<script>
+		Date.prototype.format = function (fmt) {
+            var o = {
+                "y+": this.getFullYear, //年
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds() //秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+
+		setInterval("show_time0.innerHTML=new Date().format('hh:mm:ss');",1000);  
+	</script>
+
+	<div class="weui-cells__title">学生返校通行证</div>
+	<div class="weui-cells">
+		<div class="weui-cell  weui-cell_example">
+			<div class="weui-cell__hd"><img src="http://tjxx.lnu.edu.cn/images/person.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+			<div class="weui-cell__bd">
+				<p>学号：4031932119</p>
+			</div>
+		</div>
+		<div class="weui-cell  weui-cell_example">
+			<div class="weui-cell__hd"><img src="http://tjxx.lnu.edu.cn/images/person.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+			<div class="weui-cell__bd">
+				<p>姓名：于笑雪</p>
+			</div>
+		</div>
+		<div class="weui-cell  weui-cell_example">
+			<div class="weui-cell__hd"><img src="http://tjxx.lnu.edu.cn/images/person.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+			<div class="weui-cell__bd">
+				<p>学院：信息学院</p>
+			</div>
+		</div>
+		<div class="weui-cell  weui-cell_example">
+			<div class="weui-cell__hd"><img src="http://tjxx.lnu.edu.cn/images/time.png" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
+			<div class="weui-cell__bd">
+				<p id="daytime"> 时间：0000/00/00</p>
+				<script>
+					daytime.innerHTML="时间："+new Date().format('yyyy/MM/dd');
+				</script>
+			</div>
+		</div>
+		
+	</div>
+	<br/>
+	<br/>
+	<div class="weui-footer">
+	<script>
+		function changeColor(){
+			var  color =  document.getElementById("myColor").value
+			bg.style.background=color
+		}
+	</script>
+	<p>版权所有 &copy; 辽宁大学</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<input id="myColor" style="background:transparent;border:transparent;" type="color" onchange="changeColor()"></input>
+
+	</div>
+</div>
+<!script type="text/javascript" src="http://tjxx.lnu.edu.cn/js/getpass.js?v=2021111811217"><!/script>
+</body>
+</html>
