@@ -83,7 +83,7 @@ jQuery(document).ready(function($) {
 
     });
     $("progress").click(function(event) {
-        $(this).attr("value", event.offsetX/$(this).width()/0.8 * $(this).attr("max"));
+        $(this).attr("value", event.offsetX/$(this).width() * $(this).attr("max"));
     });
     // $("*").removeAttr('contenteditable');
 
