@@ -1,1 +1,0 @@
-on-simplicity-in-technology
