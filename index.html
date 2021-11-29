@@ -1,31 +1,11 @@
----
-layout: page
-title: 首页
----
-<div class="page page-index">
-  {% for post in site.posts  -%}
-    {%- capture post_year %}{{ post.date | date: "%Y" }}{% endcapture -%}
-    {%- capture post_previous_year %}{{ post.previous.date | date: "%Y" }}{% endcapture -%}
-    {%- capture post_next_year %}{{ post.next.date | date: "%Y" }}{% endcapture -%}
-    {%- if forloop.first or post_next_year != post_year -%}
-    <div class="list-post">
-      <h2 id="{{post_year}}">{{post_year}}</h2>
-      <ul>
-    {%- endif %}
-        <li>
-          <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
-          <div class="title">
-            <a href="{{ site.baseurl | append: post.url }}" class="hover-underline">{{ post.title }}</a>
-          </div>
-          <div class="categories">
-            {% for categorie in post.categories -%}
-            <a href="{{site.baseurl}}/pages/categories.html#{{ categorie }}" class="hover-underline">{{ categorie }}</a>
-            {%- endfor %}
-          </div>
-        </li>
-    {%- if forloop.last or post_previous_year != post_year %}
-      </ul>
-    </div>
-    {%- endif %}
-  {%- endfor %}
-</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>canvas-nest</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="https://blog-static.cnblogs.com/files/yadongliang/canvas-nest.min.js"></script>
+        <canvas height="926" width="1920" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;" id="c_n1"></canvas>
+    </body>
+</html>
