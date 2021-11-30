@@ -1,11 +1,11 @@
 encoding: utf-8
 
 # SEO相关信息
-title: TMaize Blog
-description: TMaize的个人博客
-keywords: TMaize,Blog,Java,Html,JavaScript
-author: TMaize
-footerText: 'Copyright © 2016 皖ICP备16016174号'
+title: Sakura's Blog
+description: Sakura的个人博客
+keywords: Sakura,Blog,人工智能,深度学习,nlp
+author: Sakura
+footerText: 'Copyright © github.com'
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
@@ -17,11 +17,11 @@ exclude: ['README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock', 'b
 
 # 域名配置
 # baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
-domainUrl: 'http://blog.tmaize.net'
+domainUrl: 'https://sakura4-1.github.io'
 baseurl: ''
 
 # 吐个槽地址，会在chat页面中重定向到该地址
-tucaoUrl: https://support.qq.com/product/86335
+tucaoUrl: https://support.qq.com/product/367893
 
 # 菜单
 menu:
@@ -57,35 +57,7 @@ extMath: false
 
 # 友情链接
 links:
-  - title: 文科中的技术宅
-    url: https://www.townwang.com
-  - title: Auuu Nya Blog
-    url: http://mu1er.cn
-  - title: 春风十里
-    url: https://www.geek-era.com
-  - title: 阿川的个人博客
-    url: https://achuan.io
-  - title: 魏文成博客
-    url: https://www.wwc.ren
-  - title: 06m
-    url: https://www.06m.me
-  - title: 达达知识
-    url: https://www.dadapush.com
-  - title: 祈雨的博客
-    url: https://wakzz.cn
-  - title: hongCYu’s Blog
-    url: https://hongcyu.cn
-  - title: Sorryfu
-    url: https://fushaolei.github.io
-  - title: 简单的人生笔记
-    url: https://yoyling.com
-  - title: oneNeko的博客
-    url: https://blog.oneneko.com
-  - title: Py的Blogggg
-    url: https://blog.pyliubaolin.top
-  - title: Yuyao's Blog
-    url: http://hellocode.ink
-  - title: 木叶的博客
-    url: https://muye.ml
-  - title: Stansec
-    url: https://standeblog.com/
+  - title: 我的csdn
+    url: https://blog.csdn.net/SakuraHimi
+  - title: 原作者
+    url: https://blog.tmaize.net/
