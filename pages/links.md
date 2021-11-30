@@ -1,23 +1,21 @@
 ---
-layout: page
-title: 心情
+layout: mypost
+title: 友情链接
 ---
-<div class="page page-mood">
-  {%- for category in site.categories %}
-  {% if category[0] != 心情}
-  <div class="list-post">
-    <h2 id="{{ category[0] }}">{{ category[0] }}</h2>
-    <ul>
-      {%- for post in category[1] %}
-      <li>
-        <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
-        <div class="title">
-          <a href="{{ site.baseurl | append: post.url }}" class="hover-underline">{{ post.categories }}</a>
-        </div>
-      </li>
-      {%- endfor %}
-    </ul>
-  </div>
-  {% endif %}
+
+欢迎各位朋友与我建立友链，如需友链请到[留言板](chat.html)留言，我看到留言后会添加上的，本站的友链信息如下
+
+```
+名称：{{ site.title }}
+描述：{{ site.description }}
+地址：{{ site.domainUrl }}{{ site.baseurl }}
+头像：{{ site.domainUrl }}{{ site.baseurl }}/static/img/logo.jpg
+```
+
+<ul>
+  {%- for link in site.links %}
+  <li>
+    <p><a href="{{ link.url }}" title="{{ link.desc }}" target="_blank" >{{ link.title }}</a></p>
+  </li>
   {%- endfor %}
-</div>
+</ul>
