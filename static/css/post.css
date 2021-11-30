@@ -27,7 +27,6 @@
 }
 .page-post .post h1::before,
 .page-post .post h2::before {
-  content: '##';
   top: 0;
   font-weight: bold;
   padding-right: 6px;
