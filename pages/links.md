@@ -5,7 +5,7 @@ title: 心情
 <div class="page page-mood">
   {%- for category in site.categories %}
   <div class="list-post">
-    <h2 id="{{ category[0] }}">{{ category[0] }}</h2>
+    <h2 id="{{ category[0] }}">{{ site.categories.心情 }}</h2>
     <ul>
       {%- for post in category[1] %}
       <li>
