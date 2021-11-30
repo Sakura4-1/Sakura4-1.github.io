@@ -3,7 +3,8 @@ layout: page
 title: 心情
 ---
 <div class="page page-mood">
-  {%- for category in site.categories.心情 %}
+  {%- for category in site.categories %}
+  {% if category[0] != 心情}
   <div class="list-post">
     <h2 id="{{ category[0] }}">{{ category[0] }}</h2>
     <ul>
@@ -11,11 +12,12 @@ title: 心情
       <li>
         <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
         <div class="title">
-          <a href="{{ site.baseurl | append: post.url }}" class="hover-underline">{{ post.title }}</a>
+          <a href="{{ site.baseurl | append: post.url }}" class="hover-underline">{{ post.categories }}</a>
         </div>
       </li>
       {%- endfor %}
     </ul>
   </div>
+  {% endif %}
   {%- endfor %}
 </div>
