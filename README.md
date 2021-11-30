@@ -10,7 +10,8 @@
 ## 感谢
 
 主题原作者[TMaize Blog](https://blog.tmaize.net/)
-[JetBrains](https://www.jetbrains.com/?from=Sakura4-1.github.io) 免费提供的开发工具[![JetBrains](./static/img/jetbrains.svg)](https://www.jetbrains.com/?from=Sakura4-1.github.io)
+
+[JetBrains](https://www.jetbrains.com/?from=Sakura4-1.github.io) 免费提供的开发工具
 
 [夜间模式代码高亮配色](https://github.com/mgyongyosi/OneDarkJekyll)
 
