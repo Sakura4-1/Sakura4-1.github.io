@@ -22,7 +22,5 @@ title: 关于我
 
 - 能够使用 Git/SVN 对代码版本进行控制
 
-## CSDN
 
-[https://blog.csdn.net/SakuraHimi](https://blog.csdn.net/SakuraHimi)
 
