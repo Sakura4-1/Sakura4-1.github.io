@@ -1,8 +1,8 @@
 # 介绍
 
 [![Language](https://img.shields.io/badge/Jekyll-Theme-blue)](https://github.com/Sakura4-1/Sakura4-1.github.io)
-[![license](https://img.shields.io/github/license/TMaize/tmaize-blog)](https://github.com/Sakura4-1/Sakura4-1.github.io)
-[![GitHub stars](https://img.shields.io/github/stars/TMaize/tmaize-blog?style=social)](https://github.com/Sakura4-1/Sakura4-1.github.io)
+[![license](https://img.shields.io/github/license/Sakura4-1/Sakura4-1.github.io)](https://github.com/Sakura4-1/Sakura4-1.github.io)
+[![GitHub stars](https://img.shields.io/github/stars/Sakura4-1/Sakura4-1.github.io?style=social)](https://github.com/Sakura4-1/Sakura4-1.github.io)
 
 一款 jekyll 主题，简洁纯净(主题资源请求<20KB)，未引入任何框架，秒开页面，支持自适应，支持全文检索，支持夜间模式
 
@@ -10,7 +10,7 @@
 ## 感谢
 
 主题原作者[TMaize Blog](https://blog.tmaize.net/)
-[JetBrains](https://www.jetbrains.com/?from=tmaize-blog) 免费提供的开发工具[![JetBrains](./static/img/jetbrains.svg)](https://www.jetbrains.com/?from=tmaize-blog)
+[JetBrains](https://www.jetbrains.com/?from=Sakura4-1.github.io) 免费提供的开发工具[![JetBrains](./static/img/jetbrains.svg)](https://www.jetbrains.com/?from=Sakura4-1.github.io)
 
 [夜间模式代码高亮配色](https://github.com/mgyongyosi/OneDarkJekyll)
 
