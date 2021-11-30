@@ -3,8 +3,7 @@ layout: page
 title: 心情
 ---
 <div class="page page-mood">
-  {% for post in site.posts  -%}
-  {%- if post.categories[0] != 心情 -%}
+  {% for post in site.categories.心情  -%}
     {%- capture post_year %}{{ post.date | date: "%Y" }}{% endcapture -%}
     {%- capture post_previous_year %}{{ post.previous.date | date: "%Y" }}{% endcapture -%}
     {%- capture post_next_year %}{{ post.next.date | date: "%Y" }}{% endcapture -%}
@@ -28,6 +27,5 @@ title: 心情
       </ul>
     </div>
     {%- endif %}
-  {%- endif -%}
   {%- endfor %}
 </div>
